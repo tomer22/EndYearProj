@@ -23,9 +23,9 @@ public class starter {
 
             if (workout == 1) {
                 System.out.println("\nWhat body parts would you like to focus on in terms of a push, pull, legs split?");
-                System.out.println("1. Push");
-                System.out.println("2. Pull");
-                System.out.println("3. Legs");
+                System.out.println("1. Push:");
+                System.out.println("2. Pull:");
+                System.out.println("3. Legs:");
 
                 int split = scanner.nextInt();
 
