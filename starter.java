@@ -12,7 +12,9 @@ public class starter {
 
         if (gymChoice == 1) {
             System.out.println("What type of equipment do you have?");
-            //options for equipment yet to be implemented because I will write a separate class for each equipment with instance variables and methods like equipment name, movement type, target muscle, time: sets*(time per set) + ((sets-1) * time per rest), and similar equipment types it goes along with via a compareTo or simply by movement type and target muscle
+            // options for equipment yet to be implemented because I will write a separate class for each equipment with instance variables and methods like equipment
+            // name, movement type, target muscle, time: sets*(time per set) + ((sets-1) * time per rest), and similar equipment types it goes along with via a
+            // compareTo or simply by movement type and target muscle
         } else if (gymChoice == 2) {
             System.out.println("\nWhat type of workout would you like to be doing?");
             System.out.println("1. Muscle Hypertrophy");
