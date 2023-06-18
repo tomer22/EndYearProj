@@ -12,14 +12,19 @@ public class starter {
 
         if (gymChoice == 1) {
             System.out.println("What type of equipment do you have?");
+                System.out.println("1. Dumbells");
+                System.out.println("2. Pullup Bar");
+                System.out.println("3. Both");
+                System.out.println("4. No Equipment");
             // options for equipment yet to be implemented because I will write a separate class for each equipment with instance variables and methods like equipment
             // name, movement type, target muscle, time: sets*(time per set) + ((sets-1) * time per rest), and similar equipment types it goes along with via a
             // compareTo or simply by movement type and target muscle
         } else if (gymChoice == 2) {
                 System.out.println("\nWhat body parts would you like to focus on in terms of a push, pull, legs split?");
-                System.out.println("1. Push:");
-                System.out.println("2. Pull:");
-                System.out.println("3. Legs:");
+                System.out.println("1. Push (chest, triceps, etc.)");
+                System.out.println("2. Pull (back, biceps, etc.)");
+                System.out.println("3. Legs (quads, hamstrings, etc.)");
+                System.out.println("4. I want everything equally");
 
                 int split = scanner.nextInt();
 
