@@ -16,14 +16,6 @@ public class starter {
             // name, movement type, target muscle, time: sets*(time per set) + ((sets-1) * time per rest), and similar equipment types it goes along with via a
             // compareTo or simply by movement type and target muscle
         } else if (gymChoice == 2) {
-            System.out.println("\nWhat type of workout would you like to be doing?");
-            System.out.println("1. Muscle Hypertrophy");
-            System.out.println("2. Cardio");
-            System.out.println("3. Calisthenics");
-
-            int workout = scanner.nextInt();
-
-            if (workout == 1) {
                 System.out.println("\nWhat body parts would you like to focus on in terms of a push, pull, legs split?");
                 System.out.println("1. Push:");
                 System.out.println("2. Pull:");
@@ -33,27 +25,18 @@ public class starter {
 
                 //write workouts
                 if (split == 1) {
-                    System.out.println("\nPush Workout");
+                    System.out.println("\nPush Workout:");
                 } else if (split == 2) {
-                    System.out.println("\nMPull Workout");
+                    System.out.println("\nPull Workout:");
                 } else if (split == 3) {
-                    System.out.println("\nLegs Workout");
+                    System.out.println("\nLegs Workout:");
                 } else {
                     System.out.println("\nNot one of the listed choices");
                 }
-            } else if (workout == 2) {
-                System.out.println("\nCardio Workout");
-                //will implement the formatted cardio workouts
-
-            } else if (workout == 3) {
-                System.out.println("\nCalisthenics Workout");
-                //as well as calisthenics workouts
-
-            } else {
-                System.out.println("\nChoice not listed");
             }
-        } else {
+          else {
             System.out.println("\nChoice not listed");
         }
     }
 }
+
