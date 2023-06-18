@@ -6,23 +6,35 @@ public class Exercise implements Comparable<Exercise> {
     private int sets;
     private int TPS;
     private int TFR;
+    private String eT;
 
     // Constructors
-    public Exercise(String equipmentName, String movementType, String targetMuscle, int s, int timePerSet, int timeForRest) {
+    public Exercise(String equipmentName, String movementType, String targetMuscle, int s, int timePerSet, int timeForRest, String equipmentType) {
         eN = equipmentName;
         mT = movementType;
         tM = targetMuscle;
         sets = s;
         TPS = timePerSet;
         TFR = timeForRest;
+        eT = equipmentType;
+    }
 
-
+    public Exercise(String equipmentName, String movementType, String targetMuscle, String equipmentType) {
+        eN = equipmentName;
+        mT = movementType;
+        tM = targetMuscle;
+        eT = equipmentType;
+        //going based on averages / standard active and rest times
+        sets = 3;
+        TPS = 60;
+        TFR = 120;
     }
 
     public Exercise(String equipmentName, String movementType, String targetMuscle) {
         eN = equipmentName;
         mT = movementType;
         tM = targetMuscle;
+        eT = "NONE";
         //going based on averages / standard active and rest times
         sets = 3;
         TPS = 60;
@@ -51,6 +63,10 @@ public class Exercise implements Comparable<Exercise> {
 
     public int getTimePerRest() {
         return TFR;
+    }
+
+    public String getEquipmentType() {
+        return eT;
     }
 
     public int calculateTotalTime() {
