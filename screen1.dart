@@ -2,6 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:rive/rive.dart';
+import 'choose.dart';
 //import other files or 'pages' from here
 
 class HomePage extends StatefulWidget {
@@ -23,15 +24,15 @@ class _HomePageState extends State<HomePage> {
             Positioned.fill(
               child: BackdropFilter(
                 filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-                child: SizedBox(),
+                child: const SizedBox(),
               ),
             ),
-            const SafeArea(
+             SafeArea(
                 child: Padding(
                   padding: EdgeInsets.symmetric(horizontal: 40),
                   child: Column(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 300,
                         child: Column(
                           children: [
@@ -56,15 +57,34 @@ class _HomePageState extends State<HomePage> {
 
                           ],
                         )
-                      )
+                      ),
+                    SizedBox(
+                      height: 100,
+                      width: 400,
+                      child: FloatingActionButton(
+                        elevation: 0.0,
+                        backgroundColor: Colors.redAccent,
+                        onPressed: () {
+                          Navigator.push(context,
+                            MaterialPageRoute(builder: (context)=>Choose()),
+                          );
+                        },
+                        child: Icon(
+                          Icons.arrow_circle_up_rounded,
+                          size: 75.0,
 
+                        ),
+                      ),
+                    ),
+                        ],
+                      ),
+                    )
+             )
                     ],
        ),
-                )
-            )
-          ],
-        ),
-      );
+                );
+
+
 
 
 }
